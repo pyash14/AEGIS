@@ -6,7 +6,7 @@ load_dotenv()
 # Anthropic
 ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
 CLAUDE_MODEL = 'claude-sonnet-4-5'
-MAX_TOKENS = 1000
+MAX_TOKENS = 2048
 
 # FAISS
 MEDICAL_INDEX_DIR = 'indexes/medical_index'
@@ -22,7 +22,7 @@ CHAT_HISTORY_LIMIT = 5
 # Clinical constants (DO NOT CHANGE)
 ICR = 10.0        # g carbs per unit insulin
 ISF = 3.0         # mmol/L drop per unit
-TARGET = 6.0      # mmol/L
+TARGET = 7.8      # mmol/L
 HYPO_THRESHOLD = 3.9
 HYPER_THRESHOLD = 10.0
 
